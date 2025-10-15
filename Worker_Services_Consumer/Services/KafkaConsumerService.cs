@@ -37,7 +37,6 @@ namespace Worker_Services_Consumer.Services
                 MaxPollIntervalMs = _kafkaSettings.MaxPollIntervalMs
             };
 
-            // Crear consumidores para cada tópico
             var topics = new[] 
             { 
                 _kafkaSettings.RequestLogsTopic, 
@@ -78,7 +77,6 @@ namespace Worker_Services_Consumer.Services
                             Headers = ExtractHeaders(consumeResult.Message.Headers)
                         };
 
-                        // Extraer información adicional de los headers
                         if (logMessage.Headers.ContainsKey("CorrelationId"))
                             logMessage.CorrelationId = logMessage.Headers["CorrelationId"];
                         
@@ -91,12 +89,11 @@ namespace Worker_Services_Consumer.Services
                         messages.Add(logMessage);
 
                         _logger.LogInformation(
-                            "✅ Mensaje consumido del topic {Topic}: Offset={Offset}, Partition={Partition}",
+                            "Mensaje consumido del topic {Topic}: Offset={Offset}, Partition={Partition}",
                             consumeResult.Topic,
                             consumeResult.Offset.Value,
                             consumeResult.Partition.Value);
 
-                        // Commit manual del offset
                         if (!_kafkaSettings.EnableAutoCommit)
                         {
                             consumer.Commit(consumeResult);
@@ -105,11 +102,11 @@ namespace Worker_Services_Consumer.Services
                 }
                 catch (ConsumeException ex)
                 {
-                    _logger.LogError(ex, "❌ Error al consumir mensaje: {Reason}", ex.Error.Reason);
+                    _logger.LogError(ex, "Error al consumir mensaje: {Reason}", ex.Error.Reason);
                 }
                 catch (Exception ex)
                 {
-                    _logger.LogError(ex, "❌ Error inesperado al consumir mensaje");
+                    _logger.LogError(ex, "Error inesperado al consumir mensaje");
                 }
             }
 

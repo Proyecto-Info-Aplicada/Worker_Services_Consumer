@@ -24,7 +24,6 @@ namespace Worker_Services_Consumer.Services
                 using var connection = new SqlConnection(_connectionString);
                 await connection.OpenAsync();
 
-                // Crear tabla RequestLogs si no existe
                 var createRequestLogsTable = @"
                     IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'RequestLogs')
                     BEGIN
@@ -44,7 +43,6 @@ namespace Worker_Services_Consumer.Services
                         CREATE INDEX IX_RequestLogs_CorrelationId ON RequestLogs(CorrelationId)
                     END";
 
-                // Crear tabla ErrorLogs si no existe
                 var createErrorLogsTable = @"
                     IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'ErrorLogs')
                     BEGIN
@@ -64,7 +62,6 @@ namespace Worker_Services_Consumer.Services
                         CREATE INDEX IX_ErrorLogs_CorrelationId ON ErrorLogs(CorrelationId)
                     END";
 
-                // Crear tabla EventLogs si no existe
                 var createEventLogsTable = @"
                     IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'EventLogs')
                     BEGIN
@@ -93,11 +90,11 @@ namespace Worker_Services_Consumer.Services
                 using var command3 = new SqlCommand(createEventLogsTable, connection);
                 await command3.ExecuteNonQueryAsync();
 
-                _logger.LogInformation("✅ Base de datos inicializada correctamente");
+                _logger.LogInformation("Base de datos inicializada correctamente");
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "❌ Error al inicializar la base de datos");
+                _logger.LogError(ex, "Error al inicializar la base de datos");
                 throw;
             }
         }
@@ -135,11 +132,11 @@ namespace Worker_Services_Consumer.Services
                     await command.ExecuteNonQueryAsync();
                 }
 
-                _logger.LogInformation("✅ {Count} mensajes guardados en SQL Server", messages.Count);
+                _logger.LogInformation("{Count} mensajes guardados en SQL Server", messages.Count);
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "❌ Error al guardar mensajes en la base de datos");
+                _logger.LogError(ex, "Error al guardar mensajes en la base de datos");
                 throw;
             }
         }
@@ -163,7 +160,7 @@ namespace Worker_Services_Consumer.Services
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "❌ Error al obtener el conteo total de mensajes");
+                _logger.LogError(ex, "Error al obtener el conteo total de mensajes");
                 return 0;
             }
         }
@@ -175,7 +172,7 @@ namespace Worker_Services_Consumer.Services
                 "request-logs" => "RequestLogs",
                 "error-logs" => "ErrorLogs",
                 "event-logs" => "EventLogs",
-                _ => "RequestLogs" // Default
+                _ => "RequestLogs"
             };
         }
     }
