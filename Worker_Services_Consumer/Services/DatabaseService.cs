@@ -5,21 +5,20 @@ using Worker_Services_Consumer.Models;
 
 namespace Worker_Services_Consumer.Services
 {
-    public class DatabaseService : IDatabaseService
+    public class DatabaseService : ServiceBase, IDatabaseService
     {
         private readonly string _connectionString;
-        private readonly ILogger<DatabaseService> _logger;
 
         public DatabaseService(IConfiguration configuration, ILogger<DatabaseService> logger)
+            : base(logger)
         {
             _connectionString = configuration.GetConnectionString("DefaultConnection") 
                 ?? throw new InvalidOperationException("Connection string not found");
-            _logger = logger;
         }
 
         public async Task InitializeDatabaseAsync()
         {
-            try
+            await ExecuteWithErrorHandlingAsync(async () =>
             {
                 using var connection = new SqlConnection(_connectionString);
                 await connection.OpenAsync();
@@ -90,21 +89,15 @@ namespace Worker_Services_Consumer.Services
                 using var command3 = new SqlCommand(createEventLogsTable, connection);
                 await command3.ExecuteNonQueryAsync();
 
-                _logger.LogInformation("Base de datos inicializada correctamente");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error al inicializar la base de datos");
-                throw;
-            }
+                LogInformation("Base de datos inicializada correctamente");
+            }, "InitializeDatabaseAsync");
         }
 
         public async Task SaveLogMessagesAsync(List<LogMessage> messages)
         {
-            if (messages == null || !messages.Any())
-                return;
+            ValidateNotEmpty(messages, nameof(messages));
 
-            try
+            await ExecuteWithErrorHandlingAsync(async () =>
             {
                 using var connection = new SqlConnection(_connectionString);
                 await connection.OpenAsync();
@@ -132,18 +125,13 @@ namespace Worker_Services_Consumer.Services
                     await command.ExecuteNonQueryAsync();
                 }
 
-                _logger.LogInformation("{Count} mensajes guardados en SQL Server", messages.Count);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error al guardar mensajes en la base de datos");
-                throw;
-            }
+                LogInformation("{Count} mensajes guardados en SQL Server", messages.Count);
+            }, "SaveLogMessagesAsync");
         }
 
         public async Task<int> GetTotalMessagesCountAsync()
         {
-            try
+            return await ExecuteWithErrorHandlingAsync(async () =>
             {
                 using var connection = new SqlConnection(_connectionString);
                 await connection.OpenAsync();
@@ -157,12 +145,7 @@ namespace Worker_Services_Consumer.Services
                 using var command = new SqlCommand(query, connection);
                 var result = await command.ExecuteScalarAsync();
                 return Convert.ToInt32(result);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error al obtener el conteo total de mensajes");
-                return 0;
-            }
+            }, "GetTotalMessagesCountAsync", defaultValue: 0);
         }
 
         private string GetTableNameByTopic(string topic)

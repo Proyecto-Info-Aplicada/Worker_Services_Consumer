@@ -6,21 +6,20 @@ using Worker_Services_Consumer.Models;
 
 namespace Worker_Services_Consumer.Services
 {
-    public class KafkaConsumerService : IKafkaConsumerService, IDisposable
+    public class KafkaConsumerService : ServiceBase, IKafkaConsumerService, IDisposable
     {
         private readonly KafkaSettings _kafkaSettings;
         private readonly WorkerSettings _workerSettings;
-        private readonly ILogger<KafkaConsumerService> _logger;
         private readonly List<IConsumer<Ignore, string>> _consumers = new();
 
         public KafkaConsumerService(
             IOptions<KafkaSettings> kafkaSettings,
             IOptions<WorkerSettings> workerSettings,
             ILogger<KafkaConsumerService> logger)
+            : base(logger)
         {
             _kafkaSettings = kafkaSettings.Value;
             _workerSettings = workerSettings.Value;
-            _logger = logger;
 
             InitializeConsumers();
         }
@@ -48,12 +47,12 @@ namespace Worker_Services_Consumer.Services
             {
                 var consumer = new ConsumerBuilder<Ignore, string>(config)
                     .SetErrorHandler((_, error) =>
-                        _logger.LogError("Error en consumidor Kafka para {Topic}: {Reason}", topic, error.Reason))
+                        LogError(new Exception(error.Reason), "Error en consumidor Kafka para {Topic}: {Reason}", topic, error.Reason))
                     .Build();
 
                 consumer.Subscribe(topic);
                 _consumers.Add(consumer);
-                _logger.LogInformation("Consumidor suscrito al topic: {Topic}", topic);
+                LogInformation("Consumidor suscrito al topic: {Topic}", topic);
             }
         }
 
@@ -88,7 +87,7 @@ namespace Worker_Services_Consumer.Services
 
                         messages.Add(logMessage);
 
-                        _logger.LogInformation(
+                        LogInformation(
                             "Mensaje consumido del topic {Topic}: Offset={Offset}, Partition={Partition}",
                             consumeResult.Topic,
                             consumeResult.Offset.Value,
@@ -102,11 +101,11 @@ namespace Worker_Services_Consumer.Services
                 }
                 catch (ConsumeException ex)
                 {
-                    _logger.LogError(ex, "Error al consumir mensaje: {Reason}", ex.Error.Reason);
+                    LogError(ex, "Error al consumir mensaje: {Reason}", ex.Error.Reason);
                 }
                 catch (Exception ex)
                 {
-                    _logger.LogError(ex, "Error inesperado al consumir mensaje");
+                    LogError(ex, "Error inesperado al consumir mensaje");
                 }
             }
 
@@ -128,7 +127,7 @@ namespace Worker_Services_Consumer.Services
                     }
                     catch (Exception ex)
                     {
-                        _logger.LogWarning(ex, "No se pudo leer el header {Key}", header.Key);
+                        LogWarning(ex, "No se pudo leer el header {Key}", header.Key);
                     }
                 }
             }
@@ -140,15 +139,11 @@ namespace Worker_Services_Consumer.Services
         {
             foreach (var consumer in _consumers)
             {
-                try
+                ExecuteWithErrorHandling(() =>
                 {
                     consumer?.Close();
                     consumer?.Dispose();
-                }
-                catch (Exception ex)
-                {
-                    _logger.LogError(ex, "Error al cerrar consumidor");
-                }
+                }, "Dispose Consumer", suppressException: true);
             }
             
             _consumers.Clear();
