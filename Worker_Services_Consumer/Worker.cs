@@ -28,17 +28,6 @@ namespace Worker_Services_Consumer
         {
             _logger.LogInformation("Kafka Consumer Worker Service iniciado");
             _logger.LogInformation("Intervalo de consumo: {Interval} segundos", _workerSettings.ConsumptionIntervalSeconds);
-            
-            try
-            {
-                await _databaseService.InitializeDatabaseAsync();
-                _logger.LogInformation("Servicio inicializado correctamente");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error al inicializar el servicio");
-                throw;
-            }
 
             await base.StartAsync(cancellationToken);
         }
@@ -46,6 +35,16 @@ namespace Worker_Services_Consumer
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             _logger.LogInformation("Worker ejecutándose y listo para consumir mensajes de Kafka");
+
+            try
+            {
+                await _databaseService.InitializeDatabaseAsync();
+                _logger.LogInformation("Base de datos inicializada correctamente");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error al inicializar la base de datos. El servicio continuara pero no guardara mensajes.");
+            }
 
             while (!stoppingToken.IsCancellationRequested)
             {
@@ -61,7 +60,7 @@ namespace Worker_Services_Consumer
                         _logger.LogInformation("{Count} mensajes recibidos de Kafka", messages.Count);
 
                         await _databaseService.SaveLogMessagesAsync(messages);
-                        
+
                         _totalMessagesProcessed += messages.Count;
 
                         var topicGroups = messages.GroupBy(m => m.Topic);
@@ -104,7 +103,7 @@ namespace Worker_Services_Consumer
         {
             _logger.LogInformation("Kafka Consumer Worker Service detenido");
             _logger.LogInformation("Total de mensajes procesados: {Total}", _totalMessagesProcessed);
-            
+
             await base.StopAsync(cancellationToken);
         }
     }
