@@ -93,8 +93,8 @@ namespace Worker_Services_Consumer
                 catch (Exception ex)
                 {
                     _logger.LogError(ex, "Error durante el procesamiento de mensajes");
-                    _logger.LogInformation("Esperando 30 segundos antes de reintentar...");
-                    await Task.Delay(TimeSpan.FromSeconds(30), stoppingToken);
+                    _logger.LogInformation("Esperando 60 segundos antes de reintentar...");
+                    await Task.Delay(TimeSpan.FromSeconds(60), stoppingToken);
                 }
             }
         }
