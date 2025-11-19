@@ -81,9 +81,9 @@ namespace Worker_Services_Consumer
                     var endTime = DateTime.UtcNow;
                     var duration = (endTime - startTime).TotalMilliseconds;
                     _logger.LogInformation("Ciclo completado en {Duration:F2}ms", duration);
-                    _logger.LogInformation("Esperando {Interval} segundos para el próximo ciclo...", _workerSettings.ConsumptionIntervalSeconds);
+                    _logger.LogInformation("Esperando 60 segundos para el próximo ciclo...");
 
-                    await Task.Delay(TimeSpan.FromSeconds(_workerSettings.ConsumptionIntervalSeconds), stoppingToken);
+                    await Task.Delay(TimeSpan.FromSeconds(60), stoppingToken);
                 }
                 catch (OperationCanceledException)
                 {
