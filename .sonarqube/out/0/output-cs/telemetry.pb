@@ -1,0 +1,1 @@
+›R„C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Worker_Services_Consumer.csproj¢net8.0òCSharp12

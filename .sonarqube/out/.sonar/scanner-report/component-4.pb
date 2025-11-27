@@ -1,0 +1,1 @@
+ 2csX	hr8Worker_Services_Consumer/Configuration/WorkerSettings.cs

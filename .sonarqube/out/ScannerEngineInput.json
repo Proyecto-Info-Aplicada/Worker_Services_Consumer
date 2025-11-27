@@ -1,0 +1,112 @@
+{
+  "scannerProperties": [
+    {
+      "key": "sonar.scanner.app",
+      "value": "ScannerMSBuild"
+    },
+    {
+      "key": "sonar.scanner.appVersion",
+      "value": "11.0"
+    },
+    {
+      "key": "sonar.scanner.bootstrapStartTime",
+      "value": "1764195249000"
+    },
+    {
+      "key": "sonar.projectKey",
+      "value": "worker-services-consumer"
+    },
+    {
+      "key": "sonar.projectName",
+      "value": "Worker Services Consumer"
+    },
+    {
+      "key": "sonar.working.directory",
+      "value": "C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\.sonarqube\\out\\.sonar"
+    },
+    {
+      "key": "sonar.projectBaseDir",
+      "value": "C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer"
+    },
+    {
+      "key": "sonar.pullrequest.cache.basepath",
+      "value": "C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer"
+    },
+    {
+      "key": "sonar.sources",
+      "value": "C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\sonar-analysis.ps1"
+    },
+    {
+      "key": "sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "sonar.modules",
+      "value": "488D46D1-C125-454E-A2E5-02F12EDAE4CC"
+    },
+    {
+      "key": "488D46D1-C125-454E-A2E5-02F12EDAE4CC.sonar.projectKey",
+      "value": "worker-services-consumer:488D46D1-C125-454E-A2E5-02F12EDAE4CC"
+    },
+    {
+      "key": "488D46D1-C125-454E-A2E5-02F12EDAE4CC.sonar.projectName",
+      "value": "Worker_Services_Consumer"
+    },
+    {
+      "key": "488D46D1-C125-454E-A2E5-02F12EDAE4CC.sonar.projectBaseDir",
+      "value": "C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer"
+    },
+    {
+      "key": "488D46D1-C125-454E-A2E5-02F12EDAE4CC.sonar.working.directory",
+      "value": "C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\.sonarqube\\out\\.sonar\\mod0"
+    },
+    {
+      "key": "488D46D1-C125-454E-A2E5-02F12EDAE4CC.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "488D46D1-C125-454E-A2E5-02F12EDAE4CC.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "488D46D1-C125-454E-A2E5-02F12EDAE4CC.sonar.sources",
+      "value": "C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\Configuration\\KafkaSettings.cs,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\Configuration\\WorkerSettings.cs,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\Models\\LogMessage.cs,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\Program.cs,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\Services\\DatabaseService.cs,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\Services\\IDatabaseService.cs,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\Services\\IKafkaConsumerService.cs,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\Services\\KafkaConsumerService.cs,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\Services\\ServiceBase.cs,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\Worker.cs,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\obj\\Debug\\net8.0\\Worker_Services_Consumer.GlobalUsings.g.cs,\"C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs\",C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\obj\\Debug\\net8.0\\Worker_Services_Consumer.AssemblyInfo.cs,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\appsettings.Development.json,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\appsettings.json,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\Properties\\launchSettings.json,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\obj\\project.assets.json,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\obj\\Worker_Services_Consumer.csproj.nuget.dgspec.json,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\bin\\Debug\\net8.0\\appsettings.Development.json,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\bin\\Debug\\net8.0\\appsettings.json,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\bin\\Debug\\net8.0\\Worker_Services_Consumer.deps.json,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\bin\\Debug\\net8.0\\Worker_Services_Consumer.runtimeconfig.json,C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\Worker_Services_Consumer\\obj\\Debug\\net8.0\\Worker_Services_Consumer.sourcelink.json"
+    },
+    {
+      "key": "488D46D1-C125-454E-A2E5-02F12EDAE4CC.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\.sonarqube\\out\\0"
+    },
+    {
+      "key": "488D46D1-C125-454E-A2E5-02F12EDAE4CC.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\.sonarqube\\out\\0\\Issues.json"
+    },
+    {
+      "key": "488D46D1-C125-454E-A2E5-02F12EDAE4CC.sonar.cs.scanner.telemetry",
+      "value": "C:\\UCR_2025\\Segundo_Semestre\\InfoAplicada\\Proyecto\\Worker_Services_Consumer\\.sonarqube\\out\\0\\Telemetry.json"
+    },
+    {
+      "key": "sonar.token",
+      "value": "***"
+    },
+    {
+      "key": "sonar.host.url",
+      "value": "http://localhost:9000"
+    },
+    {
+      "key": "sonar.cs.opencover.reportsPaths",
+      "value": "**/coverage.opencover.xml"
+    },
+    {
+      "key": "sonar.verbose",
+      "value": "true"
+    },
+    {
+      "key": "sonar.exclusions",
+      "value": "**/coverage.opencover.xml"
+    },
+    {
+      "key": "sonar.visualstudio.enable",
+      "value": "false"
+    }
+  ]
+}

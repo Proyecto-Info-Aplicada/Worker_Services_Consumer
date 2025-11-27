@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>Worker_Services_Consumer</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>488d46d1-c125-454e-a2e5-02f12edae4cc</ProjectGuid>
+  <FullPath>C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Worker_Services_Consumer.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResultFiles>
+    <AnalysisResultFile Id="FilesToAnalyze" Location="C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\.sonarqube\conf\0\FilesToAnalyze.txt" />
+  </AnalysisResultFiles>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\.sonarqube\out\0\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\.sonarqube\out\0</Property>
+    <Property Name="sonar.cs.scanner.telemetry">C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\.sonarqube\out\0\Telemetry.json</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>net8.0</TargetFramework>
+</ProjectInfo>

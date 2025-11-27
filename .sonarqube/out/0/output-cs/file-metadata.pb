@@ -1,0 +1,14 @@
+™
+ûC:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\obj\Debug\net8.0\Worker_Services_Consumer.AssemblyInfo.csutf-8∞
+§C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8¨
+†C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\obj\Debug\net8.0\Worker_Services_Consumer.GlobalUsings.g.csutf-8w
+nC:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Worker.csutf-8Ö
+|C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Services\ServiceBase.csutf-8è
+ÖC:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Services\KafkaConsumerService.csutf-8ê
+ÜC:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Services\IKafkaConsumerService.csutf-8ã
+ÅC:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Services\IDatabaseService.csutf-8ä
+ÄC:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Services\DatabaseService.csutf-8x
+oC:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Program.csutf-8Ç
+yC:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Models\LogMessage.csutf-8é
+ÑC:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Configuration\WorkerSettings.csutf-8ç
+ÉC:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Configuration\KafkaSettings.csutf-8

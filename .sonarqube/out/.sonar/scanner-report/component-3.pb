@@ -1,0 +1,1 @@
+ 2csXhr7Worker_Services_Consumer/Configuration/KafkaSettings.cs

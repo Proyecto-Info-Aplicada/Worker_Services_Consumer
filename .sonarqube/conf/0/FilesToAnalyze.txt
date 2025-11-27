@@ -1,0 +1,16 @@
+﻿C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Configuration\KafkaSettings.cs
+C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Configuration\WorkerSettings.cs
+C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Models\LogMessage.cs
+C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Program.cs
+C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Services\DatabaseService.cs
+C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Services\IDatabaseService.cs
+C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Services\IKafkaConsumerService.cs
+C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Services\KafkaConsumerService.cs
+C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Services\ServiceBase.cs
+C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Worker.cs
+C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\obj\Debug\net8.0\Worker_Services_Consumer.GlobalUsings.g.cs
+C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\obj\Debug\net8.0\Worker_Services_Consumer.AssemblyInfo.cs
+C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\appsettings.Development.json
+C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\appsettings.json
+C:\UCR_2025\Segundo_Semestre\InfoAplicada\Proyecto\Worker_Services_Consumer\Worker_Services_Consumer\Properties\launchSettings.json

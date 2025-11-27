@@ -20,4 +20,4 @@ builder.Logging.AddConsole();
 builder.Logging.AddDebug();
 
 var host = builder.Build();
-await host.RunAsync();
+host.Run();

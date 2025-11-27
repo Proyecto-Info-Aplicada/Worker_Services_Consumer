@@ -1,0 +1,1001 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Compilador de Microsoft (R) Visual C#",
+        "version": "4.14.0.0",
+        "fileVersion": "4.14.0-3.25262.10 (8edf7bcd)",
+        "semanticVersion": "4.14.0",
+        "language": "es-MX"
+      },
+      "results": [
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_workerSettings' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 41,
+                  "endLine": 12,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3881",
+          "level": "warning",
+          "message": "Fix this implementation of 'IDisposable' to conform to the dispose pattern.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 38
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 150,
+                  "startColumn": 21,
+                  "endLine": 150,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Provide 'protected' overridable implementation of 'Dispose(bool)' on 'KafkaConsumerService' or mark the type as 'sealed'.",
+              "1": "'KafkaConsumerService.Dispose()' should call 'Dispose(true)' and 'GC.SuppressFinalize(this)'."
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'Error en operación: {OperationName}' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/ServiceBase.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 30,
+                  "endLine": 41,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/ServiceBase.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 30,
+                  "endLine": 61,
+                  "endColumn": 67
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/ServiceBase.cs",
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 30,
+                  "endLine": 79,
+                  "endColumn": 67
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/ServiceBase.cs",
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 30,
+                  "endLine": 99,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "La plantilla de mensaje de registro no debe variar entre las llamadas a \"LoggerExtensions.LogWarning(ILogger, Exception?, string?, params object?[])\"",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/ServiceBase.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 40,
+                  "endLine": 25,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "La plantilla de mensaje de registro no debe variar entre las llamadas a \"LoggerExtensions.LogInformation(ILogger, string?, params object?[])\"",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/ServiceBase.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 36,
+                  "endLine": 19,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "La plantilla de mensaje de registro no debe variar entre las llamadas a \"LoggerExtensions.LogWarning(ILogger, string?, params object?[])\"",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/ServiceBase.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 36,
+                  "endLine": 27,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "La plantilla de mensaje de registro no debe variar entre las llamadas a \"LoggerExtensions.LogError(ILogger, Exception?, string?, params object?[])\"",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/ServiceBase.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 34,
+                  "endLine": 14,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2955",
+          "level": "warning",
+          "message": "Use a comparison to 'default(T)' instead or add a constraint to 'T' so that it can't be a value type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/ServiceBase.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 37,
+                  "endLine": 43,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2955",
+          "level": "warning",
+          "message": "Use a comparison to 'default(T)' instead or add a constraint to 'T' so that it can't be a value type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/ServiceBase.cs",
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 37,
+                  "endLine": 81,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RunAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Program.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 1,
+                  "endLine": 23,
+                  "endColumn": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3776",
+          "level": "warning",
+          "message": "Refactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 46,
+                  "endLine": 61,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 13,
+                  "endLine": 65,
+                  "endColumn": 20
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 17,
+                  "endLine": 68,
+                  "endColumn": 22
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 36,
+                  "endLine": 68,
+                  "endColumn": 38
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 25,
+                  "endLine": 74,
+                  "endColumn": 27
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 51,
+                  "endLine": 74,
+                  "endColumn": 53
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 29,
+                  "endLine": 84,
+                  "endColumn": 31
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 29,
+                  "endLine": 87,
+                  "endColumn": 31
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 29,
+                  "endLine": 90,
+                  "endColumn": 31
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 29,
+                  "endLine": 101,
+                  "endColumn": 31
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 25,
+                  "endLine": 106,
+                  "endColumn": 29
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 21,
+                  "endLine": 111,
+                  "endColumn": 26
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 21,
+                  "endLine": 116,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "+1",
+              "1": "+2 (incl 1 for nesting)",
+              "10": "+3 (incl 2 for nesting)",
+              "11": "+3 (incl 2 for nesting)",
+              "2": "+1",
+              "3": "+3 (incl 2 for nesting)",
+              "4": "+1",
+              "5": "+4 (incl 3 for nesting)",
+              "6": "+4 (incl 3 for nesting)",
+              "7": "+4 (incl 3 for nesting)",
+              "8": "+4 (incl 3 for nesting)",
+              "9": "+1"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1816",
+          "level": "note",
+          "message": "Cambie \"KafkaConsumerService.Dispose()\" para llamar a GC.SuppressFinalize(object). Con esto se evitará que los tipos derivados que introducen un finalizador tengan que volver a implementar \"IDisposable\" para llamarlo.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 150,
+                  "startColumn": 21,
+                  "endLine": 150,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1854",
+          "level": "note",
+          "message": "Preferir una llamada \"TryGetValue\" en lugar de un acceso al indexador del diccionario protegido por una comprobación \"ContainsKey\" para evitar la doble búsqueda",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 33,
+                  "endLine": 84,
+                  "endColumn": 80
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 60,
+                  "endLine": 85,
+                  "endColumn": 95
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1854",
+          "level": "note",
+          "message": "Preferir una llamada \"TryGetValue\" en lugar de un acceso al indexador del diccionario protegido por una comprobación \"ContainsKey\" para evitar la doble búsqueda",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 33,
+                  "endLine": 87,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 55,
+                  "endLine": 88,
+                  "endColumn": 85
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1854",
+          "level": "note",
+          "message": "Preferir una llamada \"TryGetValue\" en lugar de un acceso al indexador del diccionario protegido por una comprobación \"ContainsKey\" para evitar la doble búsqueda",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 33,
+                  "endLine": 90,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/KafkaConsumerService.cs",
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 53,
+                  "endLine": 91,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6667",
+          "level": "warning",
+          "message": "Logging in a catch clause should pass the caught exception as a parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Worker.cs",
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 21,
+                  "endLine": 90,
+                  "endColumn": 88
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'GetTableNameByTopic' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/DatabaseService.cs",
+                "region": {
+                  "startLine": 151,
+                  "startColumn": 24,
+                  "endLine": 151,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "El miembro \"GetTableNameByTopic\" no tiene acceso a los datos de la instancia y se puede marcar como static.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Services/DatabaseService.cs",
+                "region": {
+                  "startLine": 151,
+                  "startColumn": 24,
+                  "endLine": 151,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6664",
+          "level": "warning",
+          "message": "Reduce the number of Information logging calls within this code block from 3 to the 2 allowed.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Worker.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 21,
+                  "endLine": 54,
+                  "endColumn": 106
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Worker.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 21,
+                  "endLine": 83,
+                  "endColumn": 92
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Worker.cs",
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 21,
+                  "endLine": 84,
+                  "endColumn": 92
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Reduce the number of Information logging calls within this code block from 3 to the 2 allowed.",
+              "1": "Reduce the number of Information logging calls within this code block from 3 to the 2 allowed."
+            }
+          }
+        },
+        {
+          "ruleId": "S6664",
+          "level": "warning",
+          "message": "Reduce the number of Information logging calls within this code block from 3 to the 2 allowed.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Worker.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 25,
+                  "endLine": 60,
+                  "endColumn": 102
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Worker.cs",
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 25,
+                  "endLine": 73,
+                  "endColumn": 97
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Worker.cs",
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 25,
+                  "endLine": 74,
+                  "endColumn": 122
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Reduce the number of Information logging calls within this code block from 3 to the 2 allowed.",
+              "1": "Reduce the number of Information logging calls within this code block from 3 to the 2 allowed."
+            }
+          }
+        },
+        {
+          "ruleId": "CA1860",
+          "level": "note",
+          "message": "Es preferible comparar \"Count\" con 0 en lugar de usar \"Any()\", tanto por claridad como por rendimiento.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UCR_2025/Segundo_Semestre/InfoAplicada/Proyecto/Worker_Services_Consumer/Worker_Services_Consumer/Worker.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 25,
+                  "endLine": 58,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "DiagnosticPropertyKey": "Count"
+            }
+          }
+        }
+      ],
+      "rules": {
+        "CA1816": {
+          "id": "CA1816",
+          "shortDescription": "Los métodos Dispose deberían llamar a SuppressFinalize",
+          "fullDescription": "Un método que es una implementación de Dispose no llama a GC.SuppressFinalize, o un método que no es una implementación de Dispose llama a GC.SuppressFinalize, o un método llama a GC.SuppressFinalize y pasa algo distinto de \"this\" (Me en Visual Basic).",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1816",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1822": {
+          "id": "CA1822",
+          "shortDescription": "Marcar miembros como static",
+          "fullDescription": "Los miembros que no tienen acceso a datos de instancia o que llaman a métodos de instancia se pueden marcar como static. Después de marcar los métodos como static, el compilador emitirá los sitios de llamada no virtuales para estos miembros. Esto puede proporcionar una mejora apreciable del rendimiento del código sensible al rendimiento.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1854": {
+          "id": "CA1854",
+          "shortDescription": "Preferir el método \"IDictionary.TryGetValue(TKey, out TValue)\"",
+          "fullDescription": "Preferir una llamada \"TryGetValue\" a un acceso al indexador del diccionario protegido por una comprobación \"ContainsKey\". Tanto \"ContainsKey\" como el indexador buscarían de forma exhaustiva, por lo que el uso de \"TryGetValue\" elimina la búsqueda adicional.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1854",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1860": {
+          "id": "CA1860",
+          "shortDescription": "Evitar usar el método de extensión \"Enumerable.Any()\"",
+          "fullDescription": "Es preferible usar las propiedades \"IsEmpty\", \"Count\" o \"Length\", si hay alguna disponible, en lugar de llamar a \"Enumerable.Any()\". La intención es más clara y tiene un mejor rendimiento que usar el método de extensión \"Enumerable.Any()\".",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1860",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA2254": {
+          "id": "CA2254",
+          "shortDescription": "La plantilla debe ser una expresión estática",
+          "fullDescription": "La plantilla de mensaje de registro no debe variar entre llamadas.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2254",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "S1192": {
+          "id": "S1192",
+          "shortDescription": "String literals should not be duplicated",
+          "fullDescription": "Duplicated string literals make the process of refactoring complex and error-prone, as any change would need to be propagated on all occurrences.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1192",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2325": {
+          "id": "S2325",
+          "shortDescription": "Methods and properties that don't access instance data should be static",
+          "fullDescription": "Methods and properties that don’t access instance data should be marked as static for the following reasons:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2325",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2955": {
+          "id": "S2955",
+          "shortDescription": "Generic parameters not constrained to reference types should not be compared to \"null\"",
+          "fullDescription": "In C#, without constraints on a generic type parameter, both reference and value types can be passed. However, comparing this type parameter to null can be misleading as value types, like struct, can never be null.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2955",
+          "properties": {
+            "category": "Minor Bug",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3776": {
+          "id": "S3776",
+          "shortDescription": "Cognitive Complexity of methods should not be too high",
+          "fullDescription": "This rule raises an issue when the code cognitive complexity of a function is above a certain threshold.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3776",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3881": {
+          "id": "S3881",
+          "shortDescription": "\"IDisposable\" should be implemented correctly",
+          "fullDescription": "The IDisposable interface is a mechanism to release unmanaged resources, if not implemented correctly this could result in resource leaks or more severe bugs.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3881",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4487": {
+          "id": "S4487",
+          "shortDescription": "Unread \"private\" fields should be removed",
+          "fullDescription": "Private fields which are written but never read are a case of \"dead store\". Changing the value of such a field is useless and most probably indicates an error in the code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4487",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6664": {
+          "id": "S6664",
+          "shortDescription": "The code block contains too many logging calls",
+          "fullDescription": "A code block should not contain too many logging statements of a specific level.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6664",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6667": {
+          "id": "S6667",
+          "shortDescription": "Logging in a catch clause should pass the caught exception as a parameter.",
+          "fullDescription": "This rule raises an issue on logging calls inside a catch clause that does not pass the raised Exception.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6667",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6966": {
+          "id": "S6966",
+          "shortDescription": "Awaitable method should be used",
+          "fullDescription": "In an async method, any blocking operations should be avoided.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6966",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
