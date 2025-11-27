@@ -40,7 +40,7 @@ namespace Worker_Services_Consumer.Services
             {
                 LogError(ex, "Error en operación: {OperationName}", operationName);
                 
-                if (defaultValue != null)
+                if (!EqualityComparer<T>.Default.Equals(defaultValue, default(T)))
                     return defaultValue;
                 
                 throw;
@@ -78,7 +78,7 @@ namespace Worker_Services_Consumer.Services
             {
                 LogError(ex, "Error en operación: {OperationName}", operationName);
                 
-                if (defaultValue != null)
+                if (!EqualityComparer<T>.Default.Equals(defaultValue, default(T)))
                     return defaultValue;
                 
                 throw;
